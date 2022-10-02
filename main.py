@@ -3,7 +3,7 @@ MAIN MODULE
 
 Author: AtomMushroom
 October 2022
-Module version: 0.1
+Module version: Pre-Alpha
 '''
 from core import core
 from core import crypro
@@ -14,9 +14,15 @@ def main():
         if terminal[0:4] == "help":
             core.help()
             main()
-    except (KeyboardInterrupt):
-        print(core.color.Red + "\n[*] (Ctrl + C ) Detected, Trying To Exit ..." + core.color.Endc)
-        print(core.color.Yellow + "[*] Thank You For Using Propaganda toolkit =)" + core.color.Endc)
+        elif terminal[0:5] == "break":
+            core.Break()
+        elif terminal[0:5] == "about":
+            core.about()
+            main()
+        else:
+            main()
+    except KeyboardInterrupt:
+        core.Break()
 
 if __name__ =='__main__':
     main()

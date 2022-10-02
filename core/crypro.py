@@ -3,7 +3,7 @@ CRYPTO MODULE
 
 Author: AtomMushroom
 October 2022
-Module version: 0.1
+Module version: Pre-Alpha
 '''
 from re import findall
 

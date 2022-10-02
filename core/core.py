@@ -2,7 +2,7 @@
 '''
 Author: AtomMushroom
 October 2022
-Module version: 0.1
+Module version: Pre-Alpha
 '''
 global art
 art = '''                                                                                                                                                                                                                               
@@ -36,8 +36,23 @@ def help():
     print(color.Blue + "Commands\t\tDescription" + color.Endc)
     print(color.Green + "---------------\t\t----------------" + color.Endc)
     print("help \t\t\tShow All Commands")
-    print("show modules \t\t\tShow All Modules")
+    print("break \t\t\tClose Propaganda")
+    print("show modules \tShow All Modules")
     print("use \t\t\tSelect Module to Use")
     print("back \t\t\tExit Current Module")
     print("run \t\t\tExecute Module")
     print("about \t\t\tAbout Author")
+
+def Break():
+    print(color.Red + "\n[*] Interrupt Detected, Trying To Exit ..." + color.Endc)
+    print(color.Red + "[*] Thank You For Using Propaganda toolkit =)" + color.Endc)
+    KeyboardInterrupt
+
+def about():
+    print(color.Green + '''
+    Author: AtomMushroom
+    Country: Russia
+    First Release: Fall 2022
+    Current Release: Fall 2022
+    
+    From Mother Russia with love''' + color.Endc)
