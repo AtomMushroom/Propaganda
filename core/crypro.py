@@ -27,4 +27,23 @@ def a1z26(mode, message, final = ""):
 ### A1Z26 ###
 
 ### Atbash ###
+def atbash(message):
+    return message[::-1]
 ### Atbash ###
+
+### ROT13 ###
+def rot13(message):
+    message = list(message.upper())
+    for symbol in range(len(message)):
+        message[symbol] = chr(ord(message[symbol])%26+ord('A'))
+    return "".join(message)
+### ROT13 ###
+
+### XOR ###
+def xor(message, key):
+    message = list(message)
+    for symbol in range(len(message)):
+        try: message[symbol] = chr(ord(message[symbol]) ^ int(key))
+        except: return ":: Key is not int type ::"
+    return "".join(message)
+### XOR ###
