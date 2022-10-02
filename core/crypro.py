@@ -1,5 +1,6 @@
-### CRYPTO MODULE ###
 '''
+CRYPTO MODULE
+
 Author: AtomMushroom
 October 2022
 Module version: 0.1

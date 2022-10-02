@@ -17,8 +17,27 @@ art = '''
 88          88            "Y8888P"    88`YbbdP"'   `Y8aaaaaaaad8P   `"YbbdP"Y8  `Y8aaaaaaaad8P  88       88  `"8bbdP"Y8  `Y8aaaaaaaad8P   
                                       88              """""""""     aa,    ,88     """""""""                                """""""""     
                                       88                             "Y8bbdP"                                                             
+Type "help", to see all commands
+
 '''
 class color:
     Green = '\033[32m'
     Red = '\033[31m'
     Blue = '\033[34m'
+    Purple = '\033[95m'
+    Cyan = '\033[96m'
+    Yellow = '\033[93m'
+    Bold = '\033[1m'
+    Endc = '\033[0m'
+
+
+def help():
+    print("\n")
+    print(color.Blue + "Commands\t\tDescription" + color.Endc)
+    print(color.Green + "---------------\t\t----------------" + color.Endc)
+    print("help \t\t\tShow All Commands")
+    print("show modules \t\t\tShow All Modules")
+    print("use \t\t\tSelect Module to Use")
+    print("back \t\t\tExit Current Module")
+    print("run \t\t\tExecute Module")
+    print("about \t\t\tAbout Author")
