@@ -37,7 +37,7 @@ def help():
     print(color.Green + "---------------\t\t----------------" + color.Endc)
     print("help \t\t\tShow All Commands")
     print("break \t\t\tClose Propaganda")
-    print("show modules \tShow All Modules")
+    print("show modules \t\tShow All Modules")
     print("use \t\t\tSelect Module to Use")
     print("back \t\t\tExit Current Module")
     print("run \t\t\tExecute Module")
@@ -47,6 +47,19 @@ def Break():
     print(color.Red + "\n[*] Interrupt Detected, Trying To Exit ..." + color.Endc)
     print(color.Red + "[*] Thank You For Using Propaganda toolkit =)" + color.Endc)
     KeyboardInterrupt
+
+def show_modules():
+    print("\n")
+    print(color.Blue + "Modules\t\tDescription" + color.Endc)
+    print(color.Green + "--------------- Crypto ----------------" + color.Endc)
+    print("crypto/a1z26 \t\t\tA1Z26")
+    print("crypto/atbash \t\t\tReverse string")
+    print("crypto/rot13 \t\t\tCasesar Cipher with key = 13")
+    print("crypto/xor \t\t\t\tXOR")
+
+    print(color.Green + "--------------- WTF ----------------" + color.Endc)
+    print("wtf/fork \t\t\tMake a fork bomb")
+    print("wtf/urandom \t\tMake a HUUUUUGE file with random data")
 
 def about():
     print(color.Green + '''
