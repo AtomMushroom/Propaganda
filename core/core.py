@@ -61,6 +61,19 @@ def show_modules():
     print("wtf/fork \t\t\tMake a fork bomb")
     print("wtf/urandom \t\tMake a HUUUUUGE file with random data")
 
+    print(color.Green + "--------------- Steganography ----------------" + color.Endc)
+    print("stegano/img \t\t\tHide data inside picture")
+
+    print(color.Green + "--------------- WiFi ----------------" + color.Endc)
+    print("wifi/dos \t\t\tKill wifi using mdk4")
+
+    print(color.Green + "--------------- Web ----------------" + color.Endc)
+    print("web/phpmyadmin \t\t\tGet admin page")
+    print("web/robots \t\t\tGet robots.txt")
+
+    print(color.Green + "--------------- Network ----------------" + color.Endc)
+    print("network/mitm \t\t\tMan In The Middle attack")
+
 def about():
     print(color.Green + '''
     Author: AtomMushroom
