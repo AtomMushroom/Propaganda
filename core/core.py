@@ -58,7 +58,7 @@ def show_modules():
     print("crypto/xor \t\t\t\tXOR")
 
     print(color.Green + "--------------- WTF ----------------" + color.Endc)
-    print("wtf/fork \t\t\tMake a fork bomb")
+    print("wtf/fork \t\t\tFORK ME!")
     print("wtf/urandom \t\tMake a HUUUUUGE file with random data")
 
     print(color.Green + "--------------- Steganography ----------------" + color.Endc)
